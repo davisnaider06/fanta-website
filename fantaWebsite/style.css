@@ -1,0 +1,232 @@
+@font-face {
+  font-family: Product Sans;
+  src: url(fonts/Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+  font-family: Product Sans B;
+  src: url(fonts/Product\ Sans\ Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Product Sans;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background: orangered;
+}
+
+.nav-container {
+  position: fixed; /* fixa na tela */
+  display: flex; /* poder manipular a div */
+  align-items: center;
+  justify-content: center; /*espaço entre o conteudo*/
+  width: 100%; /* "descomprimir" a div */
+  height: 10vh;
+  z-index: 99; /* coloca na frente do conteudo */
+}
+
+.nav-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-container img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 50px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.hero h1 {
+  font-size: 25vw;
+  color: white;
+}
+
+#fanta {
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+}
+
+#laranja-cortada {
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  left: 32%;
+  z-index: 2;
+}
+
+#laranja {
+  position: absolute;
+  width: 20%;
+  top: 55%;
+  right: 30%;
+  z-index: 3;
+}
+
+#folha {
+  position: absolute;
+  width: 15%;
+  top: 7%;
+  left: 0%;
+  transform: rotate(60deg);
+}
+
+#folha2 {
+  position: absolute;
+  width: 12%;
+  top: 70%;
+  left: 80%;
+  transform: rotate(-90deg);
+}
+
+#folha3 {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  right: 0%;
+}
+
+.hero img {
+  width: 50px;
+}
+
+/* editando a segunda sessão */
+.two {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #4d231c;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+  width: 50%;
+  height: 100%;
+}
+
+.right-side {
+  margin-right: 50px;
+}
+
+.left-side svg {
+  margin-top: 50vh;
+  width: 100%;
+  transform: rotateX(50deg);
+}
+
+.right-side h2 {
+  color: white;
+  font-size: 5vw;
+}
+
+.right-side p {
+  color: white;
+  font-size: 1vw;
+}
+
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  gap: 5vh;
+  background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.card {
+  position: relative;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  flex-direction: column;
+  gap: 2vh;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+}
+
+.card h3 {
+  margin-top: 40vh;
+  font-size: 3vw;
+  color: black;
+}
+
+.card button {
+  border: none;
+  border-radius: 50px;
+  font-size: 1vw;
+  background-color: rgb(255, 149, 0);
+  color: white;
+  padding: 1vw 2vw;
+}
+
+/* Efeito hover */
+.card button:hover {
+    transition: all 0.3s ease-in-out; /*suavizando a transição*/
+    background-color: orangered; /* Cor de fundo ao passar o mouse */
+    
+}
+
+
+#cocacola {
+  position: absolute;
+  top: -15%;
+  width: 60vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#pepsi {
+  position: absolute;
+  top: -15%;
+  width: 60vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.lemon {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  width: 25vw;
+  transform: translate(-50%, 0%);
+}
